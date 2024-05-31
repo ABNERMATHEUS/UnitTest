@@ -2,6 +2,9 @@
 
 public class Truck : BaseEntity
 {
+    private Truck()
+    {
+    }
     public Truck(string name, string model, int year, string chassis, string color)
         : base()
     {

@@ -12,7 +12,7 @@ public abstract class MappingBaseEntity<T> : IEntityTypeConfiguration<T> where T
         builder.HasKey(x => x.Id);
         builder.Property(x => x.CreatedAt).IsRequired();
         builder.Property(x => x.UpdatedAt);
-        builder.Property(x => x.CreatedBy).HasMaxLength(128);
+        builder.Property(x => x.CreatedBy).HasMaxLength(128).IsRequired();
         builder.Property(x => x.UpdatedBy).HasMaxLength(128);
     }
 }

@@ -1,9 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Trucks.Domain.Entities;
 using Trucks.Domain.Repositories;
+using Trucks.Infra.Context;
 namespace Trucks.Infra.Repositories;
 
-public class Repository<T>(DbContext _dbContext) : IRepository<T> where T : BaseEntity
+public class Repository<T>(DbContextTrucks _dbContext) : IRepository<T> where T : BaseEntity
 {
 
     public async Task AddAsync(T entity, CancellationToken cancellationToken = default)

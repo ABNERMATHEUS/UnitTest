@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <Folder Include="DeleteTruckTest\" />
+    <Folder Include="ValidatorsTest\" />
   </ItemGroup>
 
 </Project>
